@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/close"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:id="@+id/backdrop"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/save_edited_info" />
+    </RelativeLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/heart"
+        android:layout_gravity="center"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+    <EditText
+        android:id="@+id/nameEdit_settings"
+        android:layout_width="match_parent"
+        android:hint="User Name"
+        android:textSize="20dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <EditText
+        android:layout_below="@id/nameEdit_settings"
+        android:id="@+id/BioEdit_settings"
+        android:layout_width="match_parent"
+        android:hint="Bio"
+        android:textSize="20dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/logOut_settings"
+                android:text="LogOut"
+                android:textColor="#ffffff"
+                android:background="#81AAEA"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Button>
+            <Button
+                android:layout_below="@id/logOut_settings"
+                android:id="@+id/delete_settings"
+                android:text="Delete Acount"
+                android:textColor="#ffffff"
+                android:background="#81AAEA"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_height="wrap_content">
+            </Button>
+        </LinearLayout>
+
+</LinearLayout>
